@@ -32,14 +32,30 @@
     font-family: inherit;
 }
 
-
-/* botones */
-.radio-group {
+.fieldset-reservations {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
     margin-top: 16px;
     padding: 5px;
     border: 1px dashed #444;
 }
 
+.fieldset-reservations h3 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.fieldset-reservations input,
+.fieldset-reservations label {
+    margin-top: 0;
+}
+
+/* botones */
 .buttons {
     display: flex;
     gap: 10px;
