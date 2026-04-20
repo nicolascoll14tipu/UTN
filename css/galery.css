@@ -1,0 +1,29 @@
+.galery {
+    background-color: #000;
+}
+
+.galery h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.container-galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-galery img {
+    width: 100%;
+    height: 230px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.container-galery img:hover {
+    transform: scale(1.03);
+}

@@ -1,0 +1,70 @@
+.reservations {
+    background: #050505;
+}
+
+.form-reservations {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #111;
+    padding: 20px 45px;
+    border-radius: 8px;
+}
+
+.form-reservations label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.form-reservations input, 
+.form-reservations select,
+.form-reservations textarea {   
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 4px;
+    margin-top: 5px;
+    font-family: inherit;
+}
+
+
+/* botones */
+.radio-group {
+    margin-top: 16px;
+    padding: 5px;
+    border: 1px dashed #444;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: #ff0055;
+    color: #fff;
+}
+
+button[type="reset"] {
+    background: #444;
+    color: #fff;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipuana Disco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/1e6eecc149.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- navbar bootstrap responsive-->
+        <nav class="navbar navbar-expand-lg navbar-dark bootstrap-navbar fixed-top">
+            <div class="container-fluid px-3 px-lg-4">
+                <a class="navbar-brand logo py-0" href="#home">
+                    <img src="img/logo.png" alt="Tipuana Disco" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#bootstrapMainNav" aria-controls="bootstrapMainNav" aria-expanded="false"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="bootstrapMainNav">
+                    <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#event">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galery">Imagenes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reservations">Reservas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--3 videos y texto-->
+        <section id="home" class="video">
+            <div class="video-container">
+                <video autoplay muted loop class="video-item">
+                    <source src="img/vertical1.MP4" type="video/mp4" />
+                </video>
+                <video autoplay muted loop class="video-item">
+                    <source src="img/vertical2.MP4" type="video/mp4" />
+                </video>
+                <video autoplay muted loop class="video-item">
+                    <source src="img/vertical3.MP4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="text-video">
+                <h1 class="cal-sans-regular">TIPUANA DISCO</h1>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tipuanadisco/" target="_blank"><i class="fa-brands fa-instagram"
+                        style="color: rgb(255, 255, 255);"></i></a>
+                <a href="https://www.facebook.com/tipuanadisco" target="_blank"><i class="fa-brands fa-facebook"
+                        style="color: rgb(255, 255, 255);"></i></a>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section id="event" class="event">
+            <h2 class="orbitron-extra-bold">PRÓXIMOS EVENTOS</h2>
+            <div class="event-container">
+                <div class="event-item">
+                    <img src="img/banner.png" alt="Evento 1" />
+                    <h3 class="merriweather-semibold">NUEVA MISION DETECTADA</h3>
+                    <p>Los mejores DJs de la región en nuestra pista principal.</p>
+                    <button>Ver Info</button>
+                </div>
+                <div class="event-item">
+                    <img src="img/banner2.png" alt="Evento 2" />
+                    <h3 class="merriweather-semibold">SUBIMOS LA TEMPERATURA</h3>
+                    <p>Acceso exclusivo a sectores preferenciales y tragos autor.</p>
+                    <button>Ver Info</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section id="galery" class="galery">
+            <h2 class="orbitron-extra-bold">NUESTRA DISCO</h2>
+            <div class="container-galery">
+                <img src="img/general.jpeg" alt="Foto 1" />
+                <img src="img/co2.jpeg" alt="Foto 2" />
+                <img src="img/vasobarra.jpeg" alt="Foto 3" />
+                <img src="img/barman.jpeg" alt="Foto 4" />
+                <img src="img/luces.jpeg" alt="Foto 5" />
+                <img src="img/luces2.jpg" alt="Foto 6" />
+                <img src="img/luces3.jpg" alt="Foto 7" />
+                <img src="img/fuego.jpeg" alt="Foto 8" />
+            </div>
+        </section>
+
+        <!-- Reservas-Formulario -->
+        <section id="reservations" class="reservations">
+            <h2 class="orbitron-extra-bold">RESERVAS</h2>
+            <form class="form-reservations">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" placeholder="Ej: Nicolás Coll" required />
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" placeholder="email@correo.com" required />
+
+                <label for="tel">Teléfono:</label>
+                <input type="tel" id="tel" placeholder="3562-123456" required />
+
+                <label for="type">Tipo de Reserva:</label>
+                <select name="type" id="type">
+                    <option value="mesa">Mesa VIP</option>
+                    <option value="lista">Lista de Invitados</option>
+                    <option value="cumple">Cumpleaños</option>
+                </select>
+                <fieldset>
+                    <div class="radio-group">
+                        <label for="primera-vez">¿Es tu primera vez?</label>
+                        <input type="radio" name="primera-vez" id="si" value="si" required />
+                        <label for="si">Sí</label>
+                        <input type="radio" name="primera-vez" id="no" value="no" required />
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+
+
+                <label for="message">Comentario:</label>
+                <textarea id="message" rows="2" required></textarea>
+
+                <div class="buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#event">Eventos</a></li>
+            <li><a href="#galery">Imagenes</a></li>
+            <li><a href="#reservations">Reservas</a></li>
+        </ul>
+        <p>&copy; 2026 Tipuana Disco - Todos los derechos reservados.</p>
+    </footer>
+    <!-- script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
