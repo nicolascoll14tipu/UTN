@@ -4,11 +4,13 @@
     flex-direction: column;
     align-items: center;
 }
+
 .event h2 {
     color: #fff;
     margin-bottom: 40px;
     text-transform: uppercase;
 }
+
 .event-container {
     display: flex;
     flex-direction: row; 
@@ -21,7 +23,6 @@
     align-items: stretch;
 }
 
-
 .event-item {
     background: #111;
     border: 1px solid #333;
@@ -31,7 +32,6 @@
     overflow: hidden;
     transition: 0.3s;
 }
-
 
 .event img {
     width: 100%;        
