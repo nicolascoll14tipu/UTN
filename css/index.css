@@ -133,10 +133,6 @@ h2 {
 /* Home Texto  */
 .text-video {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 10;
     text-align: center;
     padding: 0 15px;
@@ -160,6 +156,7 @@ h2 {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+    display: flex;
 }
 
 /* Fuentes Google */
@@ -266,6 +263,11 @@ h2 {
 
 
 /* responsive */
+@media (max-width: 1012px) {
+    .text-video h1 {
+        font-size: 3.8rem;
+    }
+}
 
 @media (max-width: 991px) {
     section {
@@ -273,9 +275,10 @@ h2 {
     }
 }
 
+
 @media (max-width: 625px) {
     .text-video h1 {
-        font-size: 3.8rem;
+        font-size: 3.1rem;
         padding: 8px 16px;
         border-width: 2px;
     }
@@ -283,10 +286,15 @@ h2 {
 
 @media (max-width: 431px) {
     .text-video h1 {
-        font-size: 2.8rem;
+        font-size: 1.8rem;
     }
     .social-icons{
         bottom: 80px;
         font-size: 2.5rem;
+    }
+}
+@media (max-width: 320px) {
+    .text-video h1 {
+        font-size: 1.3rem;
     }
 }
